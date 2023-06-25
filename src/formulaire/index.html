@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/web1_tp.css">
+    <link rel="favicon icon" href="../image/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <title>HO&VAN Formulaire</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div>
+                <img src="../image/logo.png" alt="logo">
+                <h1>
+                    <a href="../acceuil/index.html"> HO&VAN</a>
+                </h1>
+            </div>
+            <nav>
+                <input type="checkbox">
+                <div class="menu_buger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li> <a href="../acceuil/index.html"> Acceuil </a></li>
+                        <li> <a href="../catalogue/index.html"> Catalogue </a></li>
+                        <li> <a href="../formulaire/index.html"> Formulaire </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <input type="search" placeholder="Search">
+            <div id="slider">
+                <div id="slider-container">
+                    <img src="../image/caroussel1.png" alt="carousel-03">
+                    <img src="../image/caroussel2.png" alt="carousel-04">
+                    <img src="../image/caroussel3.png" alt="carousel-05">
+                </div>
+            </div>
+
+        </header>
+        <div class="formulaire">
+            <main>
+                <form action="http://localhost:8080/w10/utilisateur" method="post">
+                    <fieldset>
+                        <legend>Formulaire</legend>
+                        <div>
+                            <label for="lastName">Nom</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Nom" autofocus required
+                                maxlength="50">
+                        </div>
+                        <div>
+                            <label for="firstName">Prénom</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Prénom" required
+                                maxlength="50">
+                        </div>
+                        <div>
+                            <label for="userPhone">Téléphone</label>
+                            <input type="tel" name="userPhone" id="userPhone" placeholder="514-888-9999" required
+                                pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$">
+                        </div>
+                        <div>
+                            <label for="userEmail">Courriel</label>
+                            <input type="email" name="userEmail" id="userEmail" placeholder="Courriel" required
+                                maxlength="100">
+                        </div>
+                        <div>
+                            <label for="userAge">Nombre d'article en achat</label>
+                            <input type="number" name="userAge" id="userAge" placeholder="nombre d'article" required
+                                min="1" max="20" step="1">
+                        </div>
+                        <div>
+                            <label for="livraison">Choix de livraison</label>
+                            <select name="livraison" id="livraison" required>
+                                <option value="">Sélectionner la livraison</option>
+                                <option value="1">Très rapide</option>
+                                <option value="2">rapide</option>
+                                <option value="3">7 jours</option>
+                                <option value="4">Quand tu as le temp</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="choix1">Francais</label>
+                            <input type="radio" name="radio" id="choix1">
+                        </div>
+                        <div>
+                            <label for="choix2">Anglais</label>
+                            <input type="radio" name="radio" id="choix2">
+                        </div>
+                        <div>
+                            <label for="choix3">Vietnamien</label>
+                            <input type="radio" name="radio" id="choix3">
+                        </div>
+                        <div>
+                            <input type="checkbox" name="pub" id="pub">
+                            <label for="pub">J'accepte de recevoir les promo par email.</label>
+                        </div>
+                    </fieldset>
+                    <div><input type="submit" value="Soumettre"></div>
+                </form>
+                <div class="sliderpic">
+                    <aside class="sliderpic_content">
+                        <img src="../image/homme4.jpg" alt="homme_somoking">
+                        <img src="../image/femme6.jpg" alt="femme_en_robe">
+                        <img src="../image/homme6.jpg" alt="homme_somoking">
+                        <img src="../image/femme7.jpg" alt="femme_en_robe">
+                        <img src="../image/homme7.jpg" alt="homme_somoking">
+                        <img src="../image/homme1.jpg" alt="homme_somoking">
+                        <img src="../image/femme1.jpg" alt="femme_en_robe">
+                        <img src="../image/homme2.jpg" alt="homme_somoking">
+                        <img src="../image/femme2.jpg" alt="femme_en_robe">
+                        <img src="../image/homme3.jpg" alt="homme_somoking">
+                        <img src="../image/femme3.jpg" alt="femme_en_robe">
+                    </aside>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <div>
+                <ul>
+
+                    <li>SOCIÉTÉ</li>
+                    <li><a href="https://www.whereuwant.com/">À propos de nous</a></li>
+                    <li><a href="https://www.whereuwant.com/">Carrières</a></li>
+                    <li><a href="https://www.whereuwant.com/">Localisateur de magasin</a></li>
+                    <li><a href="https://www.whereuwant.com/">Conditions Bal Des Finissants</a></li>
+                </ul>
+                <ul>
+                    <li>SERVICE CLIENTÈLE</li>
+                    <li><a href="https://www.whereuwant.com/">Nous contacter</a></li>
+                    <li><a href="https://www.whereuwant.com/">Aide et FAQs</a></li>
+                    <li><a href="https://www.whereuwant.com/">Expédition</a></li>
+                    <li><a href="https://www.whereuwant.com/">Politique Retours/Échanges</a></li>
+                </ul>
+                <ul>
+                    <li>LIENS RAPIDES</li>
+                    <li><a href="https://www.whereuwant.com/">Récompenses Perfect Fit</a></li>
+                    <li><a href="https://www.whereuwant.com/">Conditions d'utilisation mobile</a></li>
+                    <li><a href="https://www.whereuwant.com/">Cartes-cadeaux</a></li>
+                </ul>
+            </div>
+            <div>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.4276056671846!2d-73.5678260491413!3d45.509323179101794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a0a4d4dd4bf%3A0x4d7f9d9ce8f1d58!2s205%20Avenue%20Viger%20O%2C%20Montr%C3%A9al%2C%20QC%20H2Z%201G2%2C%20Canada!5e0!3m2!1sen!2sus!4v1645271260315!5m2!1sen!2sus">
+                </iframe>
+                <div>
+                    <span>
+                        <a href="mailto:ho&vanclothing.com.com"></a>
+                    </span>
+                    <span>
+                        <a href="https://twitter.com/"></a>
+                    </span>
+                    <span>
+                        <a href="https://www.facebook.com/"></a>
+                    </span>
+                    <span>
+                        <a href="https://www.instagram.com/"></a>
+                    </span>
+                    <span>
+                        <a href="https://www.youtube.com/"></a>
+                    </span>
+                    <span>
+                        <a href="https://www.pinterest.com/"></a>
+                    </span>
+                </div>
+                <div>
+                    &copy;2023 Ho Cong Tai & Evan Cholette Tous droits réservés &copy;
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

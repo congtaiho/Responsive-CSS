@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/web1_tp.css">
+    <link rel="favicon icon" href="../image/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <title>HO&VAN Detail</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div>
+                <img src="../image/logo.png" alt="logo">
+                <h1>
+                    <a href="../acceuil/index.html"> HO&VAN</a>
+                </h1>
+            </div>
+            <nav>
+                <input type="checkbox">
+                <div class="menu_buger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li> <a href="../acceuil/index.html"> Acceuil </a></li>
+                        <li> <a href="../catalogue/index.html"> Catalogue </a></li>
+                        <li> <a href="../formulaire/index.html"> Formulaire </a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            <input type="search" placeholder="Search">
+            <div id="slider">
+                <div id="slider-container">
+                    <img src="../image/caroussel1.png" alt="carousel-03">
+                    <img src="../image/caroussel2.png" alt="carousel-04">
+                    <img src="../image/caroussel3.png" alt="carousel-05">
+                </div>
+            </div>
+
+        </header>
+        <div class="detail">
+            <main>
+                <section>
+                    <h2>Information produit</h2>
+                    <div>
+                        <span><img src="../catalogue/image-catalogue/calalog-8.jpg" alt="catalogue-8"></span>
+                        <span><img src="../catalogue/image-catalogue/calalog-8a.jpg" alt="catalogue-8a"></span>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="savoir_plus">
+                        <label for="savoir_plus">VOIR PLUS</label>
+                        <video controls muted loop autoplay>
+                            <source src="https://corneliani.eu-central-1.linodeobjects.com/suitingup_768x968.mp4"
+                                type="video/mp4">
+                            <!--Solution alternative ici -->
+                            <object type="application/x-shockwave-flash" width="400" height="222" data="podcast.mp4">
+                                <param name="movie" value="podcast.mp4">
+                                <param name="wmode" value="transparent">
+
+                                <!--[if lte IE 6 ]>
+                                <embed
+                                    src="podcast.mp4"
+                                    type="application/x-shockwave-flash"
+                                    allowscriptaccess="always"
+                                    allowfullscreen="true"
+                                    width="400"
+                                    height="222">
+                                </embed>
+                                <![endif]-->
+
+                                Vous n'avez pas de navigateur moderne ni de plug-in Flash installé
+                                qui permet la reproduction de ce fichier vidéo.
+                                Vous pouvez télécharger <a href="https://www.google.com/chrome/">Google Chrome</a>
+                                qui est compatible avec la reproduction de fichiers audio et vidéo.
+                            </object>
+                        </video>
+                    </div>
+                </section>
+
+                <aside>
+                    <article>
+                        <div>
+                            <div>
+                                <h2>End-on-End Ultimate</h2>
+                            </div>
+
+                            <div>
+                                <span class="current_price">CA6,759</span>
+                                <span class="old_price">CA12,800</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="number">Quantité</label>
+                            <input type="number" name="number" id="number" min="1" placeholder="nombre d'article">
+                        </div>
+
+                        <div>
+                            <select name="taille" id="taille">
+                                <option value="">Taille</option>
+                                <option value="48">48</option>
+                                <option value="50">50</option>
+                                <option value="52">52</option>
+                            </select>
+
+                            <div>
+                                <button type="submit">AJOUTER AU PANIER</button>
+                            </div>
+                        </div>
+
+
+
+                        <div>
+                            <h5>Nous sommes bientôt épuisés. Dépêche-toi!</h5>
+                            <progress id="file" value="70" max="100"> 70% </progress>
+                        </div>
+
+                    </article>
+
+                    <article>
+                        <div>
+                            <input type="checkbox" name="detail" id="detail">
+                            <label for="detail">DÉTAILS ET MATÉRIAUX</label>
+                            <div class="cacher">
+                                <ul>
+                                    <li>100 % laine vierge</li>
+                                    <li>costume tailleur deux pièces</li>
+                                    <li>Drop 7</li>
+                                    <li>longueur 74 cm</li>
+                                    <li>manches avec boutons superposés</li>
+                                    <li>2 fentes dans le dos</li>
+                                    <li>Made in Italy</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="description" id="description">
+                            <label for="description">LA DESCRIPTION</label>
+                            <div class="cacher">
+                                <p>Une élégance intrinsèque, des matières raffinées, des coupes impeccables. Les
+                                    costumes
+                                    Corneliani s'établissent comme des classiques couture grâce à des modèles et des
+                                    constructions décontractées. Le Made in Italy trouve dans les costumes de la
+                                    collection
+                                    Automne-Hiver une expression à la fois forte et fluide, facile à porter. Pièce en
+                                    pure laine
+                                    grise.
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="fit" id="fit">
+                            <label for="fit">FIT</label>
+                            <div class="cacher">
+                                <ul>
+                                    <li>Le mannequin porte une taille 50 (IT)</li>
+                                    <li>Mensurations du mannequin : hauteur 187 cm, poitrine 98 cm, taille 82 cm,
+                                        hanches 98
+                                        cm</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </aside>
+
+                <section>
+                    <h2>CELA POURRAIT VOUS INTÉRESSER</h2>
+                    <div>
+                        <article>
+                            <div>
+                                <span><img src="./image/nav-1.jpg" alt="nav-1"></span>
+                            </div>
+                            <div>
+                                <h3>Imperméable vert</h3>
+                                <span class="current_price">CA1,599</span>
+                                <span class="old_price">CA3,295</span>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div>
+                                <span><img src="./image/nav-2.jpg" alt="nav-2"></span>
+                            </div>
+                            <div>
+                                <h3>Pantalon noir</h3>
+                                <span class="current_price">CA2,562</span>
+                                <span class="old_price">CA4,240</span>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div>
+                                <span><img src="./image/nav-3.jpg" alt="nav-3"></span>
+                            </div>
+                            <div>
+                                <h3>Chino blue</h3>
+                                <span class="current_price">CA899</span>
+                                <span class="old_price">CA2,249</span>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div>
+                                <span><img src="./image/nav-4.jpg" alt="nav-4"></span>
+                            </div>
+                            <div>
+                                <h3>Casquette</h3>
+                                <span class="current_price">CA4,562</span>
+                                <span class="old_price">CA8,240</span>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div>
+                <ul>
+
+                    <li>SOCIÉTÉ</li>
+                    <li><a href="https://www.whereuwant.com/">À propos de nous</a></li>
+                    <li><a href="https://www.whereuwant.com/">Carrières</a></li>
+                    <li><a href="https://www.whereuwant.com/">Localisateur de magasin</a></li>
+                    <li><a href="https://www.whereuwant.com/">Conditions Bal Des Finissants</a></li>
+                </ul>
+                <ul>
+                    <li>SERVICE CLIENTÈLE</li>
+                    <li><a href="https://www.whereuwant.com/">Nous contacter</a></li>
+                    <li><a href="https://www.whereuwant.com/">Aide et FAQs</a></li>
+                    <li><a href="https://www.whereuwant.com/">Expédition</a></li>
+                    <li><a href="https://www.whereuwant.com/">Politique Retours/Échanges</a></li>
+                </ul>
+                <ul>
+                    <li>LIENS RAPIDES</li>
+                    <li><a href="https://www.whereuwant.com/">Récompenses Perfect Fit</a></li>
+                    <li><a href="https://www.whereuwant.com/">Conditions d'utilisation mobile</a></li>
+                    <li><a href="https://www.whereuwant.com/">Cartes-cadeaux</a></li>
+                </ul>
+            </div>
+            <div>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.4276056671846!2d-73.5678260491413!3d45.509323179101794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a0a4d4dd4bf%3A0x4d7f9d9ce8f1d58!2s205%20Avenue%20Viger%20O%2C%20Montr%C3%A9al%2C%20QC%20H2Z%201G2%2C%20Canada!5e0!3m2!1sen!2sus!4v1645271260315!5m2!1sen!2sus">
+                </iframe>
+                <div>
+                    <span>
+                        <a href="mailto:ho&vanclothing.com.com"></a>
+                    </span>
+                    <span>
+                        <a href="https://twitter.com/"></a>
+                    </span>
+                    <span>
+                        <a href="https://www.facebook.com/"></a>
+                    </span>
+                    <span>
+                        <a href="https://www.instagram.com/"></a>
+                    </span>
+                    <span>
+                        <a href="https://www.youtube.com/"></a>
+                    </span>
+                    <span>
+                        <a href="https://www.pinterest.com/"></a>
+                    </span>
+                </div>
+                <div>
+                    &copy;2023 Ho Cong Tai & Evan Cholette Tous droits réservés &copy;
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

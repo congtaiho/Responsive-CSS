@@ -1,0 +1,1601 @@
+/*-------------------------------------------------------------------------*/
+/*------------------Ne pas toucher au CSS si bas---------------------------*/
+/*-----------C'est le CSS pour tous les pages header/footer----------------*/
+/*-------------------------------------------------------------------------*/
+@keyframes caroussel {
+    50% {
+        transform: translate(-33%);
+        transition-property: translate();
+    }
+
+    100% {
+        transform: translate(-66%);
+        transition-property: translate();
+    }
+}
+
+@keyframes sliderpic {
+    100% {
+        transform: translate(0, -2000px);
+        transition-property: translate();
+    }
+}
+
+@keyframes openitem {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleitem {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes logorotation {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes carousseldesktop {
+    50% {
+        transform: translate(-1200px);
+    }
+
+    100% {
+        transform: translate(-2400px);
+        transition-property: translate();
+    }
+}
+
+@media only screen and (min-width:1168px) {
+    header>input, .acceuil .sliderpic {
+        animation: openitem;
+        animation-duration: 1.5s;
+    }
+}
+
+@media only screen and (min-width:1px) and (max-width:1165px) {
+    header>input {
+        animation: openitem;
+        animation-duration: 1.5s;
+    }
+}
+
+@media only screen and (min-width:640px) {
+    .menu {
+        animation-name: openitem;
+        animation-duration: 1.5s;
+    }
+}
+
+@media only screen and (min-width:1px) and (max-width:660px) {
+    .acceuil article {
+        animation-name: openitem;
+        animation-duration: 1.5s;
+    }
+}
+
+@media only screen and (min-width:670px) and (max-width:870px) {
+    .acceuil article {
+        animation-name: openitem;
+        animation-duration: 1.5s;
+    }
+}
+
+@media only screen and (min-width:880px) and (max-width:900px) {
+    .acceuil article {
+        animation-name: openitem;
+        animation-duration: 1.5s;
+    }
+}
+
+@media only screen and (min-width:1190px) and (max-width:1250px) {
+    .acceuil article {
+        animation-name: openitem;
+        animation-duration: 1.5s;
+    }
+}
+
+@media only screen and (min-width:1270px) {
+    .acceuil article {
+        animation-name: openitem;
+        animation-duration: 1.5s;
+    }
+}
+
+@media only screen and (min-width:1px) {
+    .wrapper {
+        animation-name: openitem;
+        animation-duration: .5s;
+    }
+}
+
+/*-------------------- css genéral si dessous------------------------------*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DADBDD;
+}
+
+header, div, a {
+    text-align: center;
+}
+
+header>div {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .5);
+}
+
+nav input:first-child {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    margin: 10px;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+header ul {
+    padding: 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>div:first-child {
+    overflow: hidden;
+    display: inline-block;
+    border: solid 1px black;
+}
+
+li {
+    width: 100%;
+}
+
+header li {
+    border-top: inset 5px gray;
+    border-bottom: inset 5px gray;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+a {
+    color: black;
+    text-decoration-line: none;
+    display: block;
+    height: 100%;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.menu_buger {
+    display: flex;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    gap: 10px;
+    background-color: gray;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.menu_buger div {
+    height: 3px;
+    background-color: #DADBDD;
+}
+
+.menu, aside {
+    display: none;
+}
+
+#slider {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+#slider-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    animation-name: caroussel;
+    animation-duration: 15s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    text-align: left;
+    width: calc(101vw * 3);
+}
+
+input:checked+div+div {
+    animation-name: openitem;
+    animation-duration: 1s;
+    display: block;
+}
+
+.menu>ul>li>a:hover {
+    animation-name: scaleitem;
+    animation-duration: 1.5s;
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+#slider-container>img {
+    max-width: 100vw;
+    max-height: 100%;
+}
+
+header>input {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-image: url(../image/loupe.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    font-size: 24px;
+}
+
+.wrapper {
+    color: black;
+    width: 100%;
+    font-family: 'Gloock', serif;
+}
+
+footer div:first-of-type {
+    display: flex;
+    margin-top: 30px;
+}
+
+footer div:first-of-type {
+    padding-top: 15px;
+    border-top: inset 5px gray;
+}
+
+footer ul {
+    margin-left: 15px;
+    width: 100%;
+    display: block;
+}
+
+footer a, footer li:first-of-type {
+    text-align: left;
+    font-size: 14px;
+}
+
+footer li:first-of-type {
+    color: gray;
+    font-size: 20px;
+}
+
+footer li {
+    padding: 5px;
+    padding-left: 15px;
+}
+
+iframe {
+    margin: 15px 0 15px 0;
+    height: 50vh;
+    width: 90%;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .5);
+}
+
+footer div:nth-of-type(2)>div {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer span {
+    border-radius: 15px;
+    margin: 15px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .5);
+}
+
+footer span>a {
+    background-image: url(../image/reseautage.png);
+    background-position-y: 5px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .5);
+}
+
+footer span:first-of-type>a {
+    background-image: url(../image/email.png);
+    background-size: contain;
+}
+
+footer span:nth-of-type(1n+3)>a {
+    background-position-x: -48px;
+}
+
+footer span:nth-of-type(1n+4)>a {
+    background-position-x: -97px;
+}
+
+footer span:nth-of-type(1n+5)>a {
+    background-position-x: -151px;
+}
+
+footer span:nth-of-type(1n+6)>a {
+    background-position-x: -203px;
+}
+
+span:first-child {
+    background-image: url(../image/email.png);
+    background-size: contain;
+}
+
+footer div div:last-child {
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+/*-------------------------------------------------------------------------*/
+/*------------------Ne pas toucher au CSS au dessus------------------------*/
+/*-----------C'est le CSS pour tous les pages header/footer----------------*/
+/*-------------------------------------------------------------------------*/
+/*==================== page acceuil mobile ==================  */
+.acceuil aside {
+    display: none;
+}
+
+.acceuil main section>h2 {
+    text-align: center;
+    padding: 50px 15px 15px 15px;
+    padding-bottom: 120%;
+    color: black;
+    background-image: url(../image/homme5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 55%;
+    border: inset 10px gray;
+    width: 100%;
+    font-size: 400%;
+    box-shadow: 4px 20px 2px 1px rgba(0, 0, 0, .5);
+}
+
+.acceuil section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.acceuil article {
+    margin: 30px 15px 15px 15px;
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, .5);
+}
+
+.acceuil div>a {
+    position: relative;
+    padding: 0;
+    background-image: url(../image/smoking1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: inset 10px gray;
+    height: 250px;
+}
+
+.acceuil article:nth-of-type(1n+2) div>a {
+    background-image: url(../image/chemise5.jpg);
+}
+
+.acceuil article:nth-of-type(3) div>a {
+    background-image: url(../image/femme4.jpg);
+    background-position-y: -230px;
+}
+
+.acceuil article:nth-of-type(1n+4) div>a {
+    background-image: url(../image/cravates.jpg);
+
+}
+
+.acceuil article:nth-of-type(3)>div>a>img {
+    position: absolute;
+    left: 0;
+    bottom: -270px;
+}
+
+.acceuil p {
+    padding: 15px;
+    text-align: left;
+}
+
+/*==================== page catalogue mobile ==================  */
+/* utiliser font */
+.catalogue {
+    font-family: 'LibreBaskervilleRegular';
+    font-size: 16px;
+}
+
+/* position pour check-box */
+
+.catalogue main>div>div:first-of-type:hover {
+    color: rgba(0, 0, 0, .2);
+}
+
+
+
+.catalogue main>div>div:first-of-type {
+    position: relative;
+}
+
+/* pour trier menu */
+.catalogue .sort_menu span {
+
+    display: block;
+    padding: 10px 20px;
+}
+
+/* pour span dans menu trier */
+.catalogue .sort_menu span:hover {
+    background-color: azure;
+}
+
+/* pour balise a dans menu trier */
+.catalogue .sort_menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+}
+
+/* background pour menu trier */
+.catalogue .sort_menu {
+    background-color: beige;
+    display: block;
+    width: 150px;
+    display: none;
+}
+
+/* disparu menu trier quand hover */
+.catalogue main>div input:checked~.sort_menu {
+    display: block;
+    z-index: 1;
+}
+
+.catalogue main>div input {
+    display: none;
+}
+
+/* pour le div contenu icon trier */
+.catalogue main>div div:first-of-type {
+    display: flex;
+    text-align: center;
+    position: relative;
+    font-size: larger;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(177, 177, 177);
+    border-top: 1px solid rgb(177, 177, 177);
+}
+
+/* resize pour icon trider */
+.catalogue .icon_sort>img {
+    width: 20px;
+    height: 20px;
+}
+
+/* pour main */
+.catalogue main {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/* pour section */
+.catalogue section {
+    border-bottom: 1px solid rgb(177, 177, 177);
+    margin-bottom: 10px;
+}
+
+.catalogue section h2 {
+    display: none;
+}
+
+/* pour section contenir image */
+.catalogue section>div>div {
+    text-align: center;
+    position: relative;
+}
+
+/* resize image */
+.catalogue img {
+    width: 78vw;
+}
+
+.catalogue img:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
+}
+
+/* pour image hover */
+.catalogue .image_hover {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 0;
+    opacity: 0;
+    z-index: 1;
+
+}
+
+/* disparu image hover */
+.catalogue .image_hover:hover {
+    opacity: 1;
+}
+
+/* pour article */
+.catalogue article {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* enlever attribut background-image general */
+.catalogue div>div span {
+    background-image: none;
+}
+
+/* changer color premiere span */
+.catalogue article>span:first-of-type {
+    color: green;
+    font-weight: bold;
+    text-shadow: 5px 2px 5px rgba(131, 131, 131, 0.7);
+}
+
+/* appliquer attribut line-through pour deuxieme span */
+.catalogue article>span:last-of-type {
+    text-decoration: line-through;
+    color: black;
+}
+
+.catalogue article a {
+    text-decoration: none;
+    color: grey;
+}
+
+/* changer le taile h3 */
+.catalogue article h3 {
+    margin: 0 auto;
+    padding: 5px 0;
+    font-size: 0.8em;
+}
+
+/* changer color h3 quand hover */
+.catalogue article h3:hover {
+    background: green;
+}
+
+/*==================== page formulaire mobile ==================  */
+.formulaire {
+    font-size: 24px;
+}
+
+.formulaire div:nth-of-type(-1n+6) label {
+    display: none;
+}
+
+.formulaire div:nth-of-type(-1n+6) input, .formulaire select {
+    font-size: 24px;
+    width: 80%;
+    padding: 15px;
+}
+
+.formulaire div {
+    text-align: left;
+    margin: 15px 0 15px;
+    position: relative;
+}
+
+.formulaire fieldset div:nth-of-type(1n+7)>input:last-child {
+    scale: 200%;
+    margin-right: 15%;
+}
+
+.formulaire fieldset div:nth-of-type(1n+7)>input:first-child {
+    scale: 200%;
+    margin: 10px;
+
+}
+
+/*==================== page detail mobile ==================  */
+.detail {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.detail h2 {
+    font-size: 1em;
+    text-align: left;
+    padding: 10px;
+}
+
+.detail span {
+    background-image: none;
+}
+
+.detail main>section:first-of-type {
+    grid-area: section_top;
+}
+
+.detail main>section:last-of-type {
+    grid-area: section_bottom;
+}
+
+.detail main>aside {
+    grid-area: aside;
+}
+
+/* pour main */
+.detail main {
+    /* border: 1px solid red; */
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 80vw;
+    grid-template-areas:
+        "section_top"
+        "aside"
+        "section_bottom";
+}
+
+/* pour image dans section top */
+.detail img {
+    width: 35vw;
+    margin: 5px;
+}
+
+.detail img:hover {
+    opacity: 0.8;
+    box-shadow: 5px 5px 10px grey;
+}
+
+/* pour video */
+.detail video {
+    width: 80vw;
+    display: none;
+}
+
+/* afficher video dans section top */
+.detail main>section:first-of-type input:checked~video {
+    display: block;
+}
+
+/* invisible icon checkbox */
+.detail main>section:first-of-type input {
+    display: none;
+}
+
+/* position left pour label voir plus */
+.detail main>section:first-of-type label {
+    display: block;
+    text-align: left;
+    padding: 10px;
+    border-top: 1px solid grey;
+    font-weight: bold;
+}
+
+.detail main>section:first-of-type label:hover {
+    background-color: rgba(62, 116, 1, 0.4);
+    text-decoration: underline;
+}
+
+/* pour image dans section top */
+.detail main>section>div {
+    width: 80vw;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+/* pour aside */
+.detail main>aside {
+    grid-area: aside;
+    display: block;
+    text-align: left;
+}
+
+/* position text align left */
+.detail main>aside>article>div {
+    text-align: left;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+/* pour nom produit dans aside */
+.detail aside>article:first-child>div:first-child {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+}
+
+/* currence price */
+.detail .current_price {
+    color: green;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* old price */
+.detail .old_price {
+    text-decoration: line-through;
+    font-weight: normal;
+    color: black;
+}
+
+.detail aside>article:first-child>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    padding: 10px;
+}
+
+/* movement input dans aside */
+.detail aside>article:first-child>div:nth-child(2)>input {
+    text-align: right;
+    width: 130px;
+}
+
+/* movement taille et botton ajouter */
+.detail aside>article:first-child>div:nth-child(3) {
+    display: flex;
+}
+
+/* changer le taile pour select */
+.detail aside>article:first-child>div:nth-child(3)>select {
+    width: 20vw;
+    height: 30px;
+}
+
+/* changer le taile pour button ajouter */
+.detail aside>article:first-child>div:nth-child(3)>div>button {
+    width: 60vw;
+    height: 30px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    border: 1px solid green;
+}
+
+/* hover button ajouter */
+.detail aside>article:first-child>div:nth-child(3)>div>button:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+/* pour afficher et invisible detail et materiaux */
+.detail .cacher, aside>article:last-child>div>input {
+    display: none;
+}
+
+.detail aside>article:last-child>div>input:checked~.cacher {
+    display: block;
+}
+
+.detail aside>article:last-child>div>label {
+    display: block;
+    /* border: 1px solid red; */
+    width: 80vw;
+    padding: 10px;
+}
+
+.detail aside>article:last-child>div>label:hover {
+    background-color: rgba(0, 0, 255, 0.3);
+    text-decoration: underline;
+}
+
+.detail aside>article:last-child>div:last-child {
+    border-bottom: none;
+}
+
+.detail .cacher>ul, p {
+    font-size: 0.8em;
+    list-style: inside;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* pour derniere section CELA POURRAIT */
+.detail section:last-of-type {
+    /* border: 1px solid blue; */
+    margin-bottom: 10px;
+    background-color: rgb(160, 160, 160);
+}
+
+.detail section:last-of-type h2 {
+    text-align: center;
+    color: orange;
+}
+
+.detail section:last-of-type>div {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+
+.detail section:last-of-type article {
+    width: 30vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail section:last-of-type h3, span {
+    font-size: 0.8em;
+    color: blanchedalmond;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================== page formulaire mobile ==================  */
+.formulaire {
+    font-size: 24px;
+}
+
+.formulaire fieldset div:nth-of-type(1n+7)>input:last-child {
+    position: absolute;
+    right: 100px;
+}
+
+.formulaire form {
+    color: white;
+    padding: 0 0 15px 70px;
+    background-repeat: no-repeat;
+    background-image: url(../image/homme9.jpg);
+    background-position: center;
+    border-radius: 5%;
+    background-size: cover;
+}
+
+.formulaire fieldset {
+    border: unset;
+}
+
+.formulaire fieldset legend {
+    font-size: 40px;
+}
+
+@media only screen and (min-width:668px) {
+
+    /*
+        ICI ON MET LES STYLES DE LA VERSION INTERMÉDIAIRE («phablettes» et tablettes).
+        Dans ce cas-ci, taille redimensionnée à 90% et couleur de fond verte dès que la largeur de l'écran passe au dessus de 768px
+    */
+
+    /*-------------------------------------------------------------------------*/
+    /*------------------Ne pas toucher au CSS si bas---------------------------*/
+    /*-----------C'est le CSS pour tous les pages header/footer----------------*/
+    /*-------------------------------------------------------------------------*/
+    .menu_buger, nav input {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    @media only screen and (min-width:1168px) {
+        header input {
+            margin: 15px;
+            position: absolute;
+            background-position: 0, 5px;
+            opacity: .5;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 35px;
+        }
+    }
+
+    header div:first-of-type {
+        animation-name: logorotation;
+        animation-duration: 1.5s;
+        position: relative;
+    }
+
+    header>div:first-of-type>img {
+        position: absolute;
+        left: 0;
+    }
+
+    header div:first-of-type h1 {
+        position: absolute;
+        top: 25px;
+        left: 150px;
+    }
+
+    header div h1 a {
+        font-size: 75px;
+    }
+
+    header>div:first-child {
+        width: 500px;
+        height: 160px;
+    }
+
+
+    /*-------------------------------------------------------------------------*/
+    /*------------------Ne pas toucher au CSS au dessus------------------------*/
+    /*-----------C'est le CSS pour tous les pages header/footer----------------*/
+    /*-------------------------------------------------------------------------*/
+
+    /*==================== page acceuil tablettes ==================  */
+    .acceuil main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .acceuil article {
+        width: 40%;
+    }
+
+    .acceuil a>img {
+        width: 120%;
+    }
+
+    .acceuil main h1 {
+        position: absolute;
+    }
+
+    .acceuil main section>h2 {
+        margin: 60px 0;
+    }
+
+    .acceuil section>div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .acceuil article:nth-of-type(3) div>a {
+        background-position-y: -90px;
+    }
+
+
+
+    /*==================== page formulaire tablettes ==================  */
+
+    .formulaire form {
+        width: 60%;
+        min-width: 50%;
+    }
+
+    .formulaire main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .acceuil .sliderpic, .formulaire .sliderpic {
+        height: 2400px;
+        overflow: hidden;
+    }
+
+    .acceuil .sliderpic_content, .formulaire .sliderpic_content {
+        animation-name: sliderpic;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0 15px 20px;
+        width: 300px;
+        border: inset 10px grey;
+    }
+
+    .formulaire .sliderpic {
+        display: none;
+    }
+
+    @media only screen and (min-width:756px) {
+        .formulaire .sliderpic {
+            display: flex;
+            animation-name: openitem;
+            animation-duration: 1.5s;
+        }
+    }
+
+
+
+    .acceuil .sliderpic {
+        top: 60px;
+        display: none;
+    }
+
+    .formulaire div:nth-of-type(-1n+6) label {
+        display: block;
+    }
+
+    .formulaire div:nth-of-type(-1n+6) input, .formulaire select {
+        font-size: 24px;
+        width: 80%;
+        padding: 15px;
+    }
+
+    .formulaire .sliderpic {
+        height: 1000px;
+    }
+
+    /*==================== page catalogue tablettes ==================  */
+    .catalogue section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .catalogue img {
+        width: calc(70vw / 3);
+    }
+
+    .catalogue .image_hover {
+        left: 5px;
+    }
+
+    .catalogue main>div input {
+        left: 100px;
+        top: 700px;
+    }
+
+    .catalogue article h3 {
+        font-size: 0.6em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*==================== page detail tablettes ==================  */
+    .detail main>section:first-of-type {
+        border: 0.5px solid gray;
+        grid-area: section_top;
+        width: 40vw;
+    }
+
+    .detail main>section:last-of-type {
+        grid-area: section_bottom;
+    }
+
+    .detail main>aside {
+        width: calc(90vw - 40vw);
+        border: 0.5px solid gray;
+        /* grid-area: aside; */
+    }
+
+    .detail main {
+        background-color: lightgray;
+        width: 90vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 40vw calc(90vw - 40vw);
+        grid-template-areas:
+            "section_top aside"
+            "section_bottom section_bottom";
+    }
+
+    .detail img {
+        width: 18vw;
+        margin: 5px;
+    }
+
+    .detail video {
+        width: 40vw;
+    }
+
+    .detail main>section>div {
+        width: 40vw;
+    }
+
+    .detail aside>article:first-child>div:first-child {
+        width: calc(90vw - 40vw);
+    }
+
+    .detail aside>article:first-child>div:nth-child(3)>select {
+        width: 15vw;
+    }
+
+    .detail aside>article:first-child>div:nth-child(3)>div>button {
+        width: 35vw;
+    }
+
+    .detail aside>article:last-child>div>label {
+        width: calc(90vw - 40vw);
+    }
+
+    .detail aside>article:first-child>div:nth-child(2)>input {
+        width: 150px;
+        height: 40px;
+    }
+
+    .detail section:last-of-type article {
+        width: 20vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-width:1192px) {
+    /*
+        ICI ON MET LES STYLES DE LA VERSION DESKTOP.
+        Dans ce cas-ci, taille redimensionnée à 70% et couleur de fond bleue dès que la largeur de l'écran passe au dessus de 1192px
+    */
+    /*-------------------------------------------------------------------------*/
+    /*------------------Ne pas toucher au CSS si bas---------------------------*/
+    /*-----------C'est le CSS pour tous les pages header/footer----------------*/
+    /*-------------------------------------------------------------------------*/
+
+    #slider {
+        margin: auto;
+        width: 1200px;
+    }
+
+    #slider-container {
+        animation-name: carousseldesktop;
+    }
+
+    .wrapper {
+        width: calc(100% - 30px);
+        margin: auto;
+    }
+
+    /*-------------------------------------------------------------------------*/
+    /*------------------Ne pas toucher au CSS au dessus------------------------*/
+    /*-----------C'est le CSS pour tous les pages header/footer----------------*/
+    /*-------------------------------------------------------------------------*/
+
+    /*==================== page acceuil desktop ==================  */
+
+    .acceuil main {
+        position: relative;
+        justify-content: left;
+    }
+
+    .acceuil section {
+        width: 70%;
+    }
+
+    .acceuil h2 {
+        margin: 0 0 0 150px;
+    }
+
+    .acceuil article h2 {
+        margin: unset;
+    }
+
+
+    .acceuil .sliderpic {
+        display: block;
+        margin: 60px 0 0 3%;
+    }
+
+    .acceuil main h1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    /*==================== page catalogue desktop ==================  */
+    .catalogue section {
+        width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .catalogue section>div {
+        display: inline-block;
+    }
+
+    .catalogue img {
+        width: 25vw;
+        display: block;
+
+    }
+
+    .catalogue main {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .catalogue .image_hover {
+        left: 5px;
+    }
+
+    .catalogue article h3 {
+        font-size: 0.6em;
+    }
+
+    .catalogue main>div input {
+        top: 600px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*==================== page detail desktop ==================  */
+    .detail main>section:first-of-type {
+        border: 0.5px solid gray;
+        grid-area: section_top;
+        width: 40vw;
+    }
+
+    .detail main>section:last-of-type {
+        grid-area: section_bottom;
+    }
+
+    .detail main>aside {
+        width: calc(90vw - 40vw);
+        border: 0.5px solid gray;
+        /* grid-area: aside; */
+    }
+
+    .detail main {
+        background-color: lightgray;
+        width: 90vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 40vw calc(90vw - 40vw);
+        grid-template-areas:
+            "section_top aside"
+            "section_bottom section_bottom";
+    }
+
+    .detail img {
+        width: 18vw;
+        margin: 5px;
+    }
+
+    .detail video {
+        width: 40vw;
+    }
+
+    .detail main>section>div {
+        width: 40vw;
+    }
+
+    .detail aside>article:first-child>div:first-child {
+        width: calc(90vw - 40vw);
+    }
+
+    .detail aside>article:first-child>div:nth-child(3)>select {
+        width: 15vw;
+    }
+
+    .detail aside>article:first-child>div:nth-child(3)>div>button {
+        width: 35vw;
+    }
+
+    .detail aside>article:last-child>div>label {
+        width: calc(90vw - 40vw);
+    }
+
+    .detail aside>article:first-child>div:nth-child(2)>input {
+        width: 150px;
+        height: 40px;
+    }
+
+    .detail section:last-of-type article {
+        width: 20vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
