@@ -3,20 +3,23 @@ This is a responsive CSS practice application to meet different sizes of devices
 ## Here are a few pictures of this project:
 
 #### 1. Home page 
-![size-ipad-laptop](https://github.com/congtaiho/Responsive-CSS/blob/main/home_page.gif)
+<img src="https://github.com/congtaiho/Responsive-CSS/blob/main/home_page.gif" width="900">
 
 ---
-#### 2. Catalog page with size for phone ***(With the size on the phone, the screen only shows 1 image, instead of 3 images like PC and tablet).***
-![size-moblie](https://github.com/congtaiho/Responsive-CSS/assets/132761655/568ed075-25b8-43f2-86a2-c33d5d7d6774)
+#### 2. Catalog page***(With the size on the phone, the screen only shows 1 image, instead of 3 images like PC and tablet).***
+<img src="https://github.com/congtaiho/Responsive-CSS/blob/main/HO%26VAN%20Catalogue.gif" width="900">
 
 ---
 #### 3. Detail page with size for PC and tablet 
-![detail-ipad-laptop](https://github.com/congtaiho/Responsive-CSS/assets/132761655/fd1eab17-39d1-4c69-bea9-afeb43bf7599)
+<img src="https://github.com/congtaiho/Responsive-CSS/blob/main/HO%26VAN%20Catalogue%20(2).gif" width="900">
 
 ---
-#### 4. Detail page with size for phone
-![detail-mobile](https://github.com/congtaiho/Responsive-CSS/assets/132761655/dbe2e6de-6aeb-4314-9406-2968b193ae4d)
-![detail-mobile1](https://github.com/congtaiho/Responsive-CSS/assets/132761655/ad199867-aba5-4dce-a227-0e12c7d04b81)
+
+## Team ✨
+| <a href="https://rajaprerak.github.io" target="_blank">**Prerak Raja**</a> | <a href="https://varadbhogayata.github.io" target="_blank">**Varad Bhogayata**</a> | 
+| :---: |:---:|
+| [![Prerak Raja](https://github.com/rajaprerak.png?size=100)](https://rajaprerak.github.io)    | [![Varad Bhogayata](https://github.com/varadbhogayata.png?size=100)](https://varadbhogayata.github.io) ||
+| <a href="https://github.com/rajaprerak" target="_blank">`github.com/rajaprerak`</a> | <a href="https://github.com/varadbhogayata" target="_blank">`github.com/varadbhogayata`</a> 
 
 ---
 [@Cong Tai Ho] [@Evan]
