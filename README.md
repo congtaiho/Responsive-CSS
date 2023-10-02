@@ -2,11 +2,11 @@
 This is a responsive CSS practice application to meet different sizes of devices such as PC, tablet, phone. With each size, the layout of the website will be adjusted to fit each type of device.
 ## Here are a few pictures of this project:
 
-#### 1. Home page with size for PC and tablet 
-![size-ipad-laptop](https://github.com/congtaiho/Responsive-CSS/assets/132761655/bd841c6b-e629-4c03-a4e6-f4de1afc307a)
+#### 1. Home page 
+![size-ipad-laptop](https://github.com/congtaiho/Responsive-CSS/blob/main/home_page.gif)
 
 ---
-#### 2. Home page with size for phone ***(With the size on the phone, the screen only shows 1 image, instead of 3 images like PC and tablet).***
+#### 2. Catalog page with size for phone ***(With the size on the phone, the screen only shows 1 image, instead of 3 images like PC and tablet).***
 ![size-moblie](https://github.com/congtaiho/Responsive-CSS/assets/132761655/568ed075-25b8-43f2-86a2-c33d5d7d6774)
 
 ---
