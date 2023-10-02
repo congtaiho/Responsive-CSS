@@ -6,22 +6,28 @@ This is a responsive CSS practice application to meet different sizes of devices
 <img src="https://github.com/congtaiho/Responsive-CSS/blob/main/home_page.gif" width="900">
 
 ---
-#### 2. Catalog page***(With the size on the phone, the screen only shows 1 image, instead of 3 images like PC and tablet).***
+#### 2. Catalog page
 <img src="https://github.com/congtaiho/Responsive-CSS/blob/main/HO%26VAN%20Catalogue.gif" width="900">
 
 ---
-#### 3. Detail page with size for PC and tablet 
+#### 3. Details page with size for PC and tablet 
 <img src="https://github.com/congtaiho/Responsive-CSS/blob/main/HO%26VAN%20Catalogue%20(2).gif" width="900">
 
 ---
 
-## Team ✨
-| <a href="https://congtaiho.github.io/" target="_blank">**Cong Tai Ho**</a> | <a href="https://varadbhogayata.github.io" target="_blank">**Varad Bhogayata**</a> | 
-| :---: |:---:|
-| [![Prerak Raja](https://github.com/rajaprerak.png?size=100)](https://rajaprerak.github.io)    | [![Varad Bhogayata](https://github.com/varadbhogayata.png?size=100)](https://varadbhogayata.github.io) ||
-| <a href="https://github.com/rajaprerak" target="_blank">`github.com/rajaprerak`</a> | <a href="https://github.com/varadbhogayata" target="_blank">`github.com/varadbhogayata`</a> 
+## Features 📋
+⚡️ Fully Responsive\
+⚡️ Valid HTML5 & CSS3\
 
----
+## Sections 📚
+✔️ Home\
+✔️ Catalog\
+✔️ Details\
+✔️ Form\
+
+
+## Team ✨
+
 [@Cong Tai Ho] [@Evan]
 
 
