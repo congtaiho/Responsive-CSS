@@ -17,13 +17,13 @@ This is a responsive CSS practice application to meet different sizes of devices
 
 ## Features 📋
 ⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
+⚡️ Valid HTML5 & CSS3
 
 ## Sections 📚
 ✔️ Home\
 ✔️ Catalog\
 ✔️ Details\
-✔️ Form\
+✔️ Form
 
 
 ## Team ✨
