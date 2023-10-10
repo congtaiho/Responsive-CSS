@@ -1,4 +1,9 @@
-# Responsive-CSS
+# Responsive-CSS🔥
+> https://github.com/congtaiho/Responsive-CSS/
+
+:star: Star me on GitHub — it helps!
+
+### Website Preview
 This is a responsive CSS practice application to meet different sizes of devices such as PC, tablet, phone. With each size, the layout of the website will be adjusted to fit each type of device.
 ## Here are a few pictures of this project:
 
